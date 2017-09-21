@@ -1,0 +1,50 @@
+﻿@model CarLookUp.ViewModels.CarClassVM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CarClassVM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model._Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model._Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model._maker)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model._maker)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model._model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model._model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model._Year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model._Year)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,26 @@
+﻿@model CarLookUp.ViewModels.DetailsEmailVM
+
+@section Headers{
+    content-type: text/html; charset=utl-8
+}
+
+<tr>
+    <td>
+        <p>StudentVM:</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>@Html.DisplayNameFor(model => model.Id): @Html.DisplayFor(model => model.Id)</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>@Html.DisplayNameFor(model => model.FirstName): @Html.DisplayFor(model => model.FirstName)</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>@Html.DisplayNameFor(model => model.LastName): @Html.DisplayFor(model => model.LastName)</p>
+    </td>
+</tr>

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<CarLookUp.ViewModels.CarClassVM>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach (var item in Model)
+    {
+        <p>
+            @item._Id
+        </p>
+
+        <h2>
+            @item._maker
+        </h2>
+
+        <h2>
+            @item._model
+        </h2>
+
+        <h3>
+            @item._Year
+        </h3>
+
+        }
